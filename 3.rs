@@ -10,9 +10,8 @@ fn is_prime(i: u128) -> bool {
 fn max_prime(val: u128) -> Option<u128> {
     let mut i = 2;
     while val / i != 0 {
-
         if val % (val / i) == 0 && is_prime(val / i) {
-            return Some(val/i);
+            return Some(val / i);
         }
 
         i += 1;
